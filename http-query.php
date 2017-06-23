@@ -23,7 +23,7 @@ function httpQuery($url, $method='get', $data=array(), $headers=array()) {
 	
     $options = array(
         'http' => array(
-            'header'  => $headerString."Content-Length: ".strlen($raw)."\r\n".$headerString,
+            'header'  => $headerString."Content-Length: ".strlen($raw)."\r\n",
             'method'  => $method,
             'content' => $raw,
             'request_fulluri' => true
